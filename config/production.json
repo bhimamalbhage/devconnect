@@ -1,0 +1,6 @@
+{
+  "mongoURI": "mongodb+srv://bhima123:bhima123@devconnect.l3w8g.mongodb.net/<dbname>?retryWrites=true&w=majority",
+  "jwtSecret": "thisistokensecret",
+  "githubClientId": "aa6c0fcb16d82449f0d3",
+  "githubSecret": "548ba9d41ec0b1293c51f51736133043342c86e0"
+}
