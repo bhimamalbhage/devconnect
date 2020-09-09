@@ -14,7 +14,7 @@
 }
 
 body {
-  font-family: "Raleway", sans-serif;
+  font-family: Montserrat, sans-serif;
   font-size: 1rem;
   line-height: 1.6;
   background-color: #eee;
@@ -67,8 +67,12 @@ p {
 }
 
 .lead {
-  font-size: 1rem;
+  font-size: 1.2rem;
   margin-bottom: 0.5rem;
+}
+
+.landing-inner .buttons {
+  margin-top: 10px;
 }
 
 .text-center {
@@ -248,6 +252,34 @@ p {
 }
 
 /* Forms */
+.form-container {
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+  background: #231e39;
+  padding: 20px 40px;
+}
+
+.form-container .text-primary {
+  font-family: Montserrat, sans-serif;
+  font-size: 22px;
+  color: #fff;
+}
+
+.form-container .lead,
+.form-container .my-1 {
+  font-family: Montserrat, sans-serif;
+  color: #fff;
+}
+
+.form-container .lead {
+  font-size: 16px;
+}
+
+.form-container .form {
+  padding: 20px 0;
+}
+
 .form .form-group {
   margin: 1.2rem 0;
 }
