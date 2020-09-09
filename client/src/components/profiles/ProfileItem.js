@@ -12,26 +12,30 @@ const ProfileItem = ({
   },
 }) => {
   return (
-    <div className='profile bg-light'>
-      <img src={avatar} alt='' className='round-img'></img>
-      <div>
-        <h2>{name}</h2>
+    <div className='bs-profile'>
+      <div className='card-container col-3'>
+        <img src={avatar} alt='' className='round'></img>
+        <h3>{name}</h3>
         <p>
           {status} {company && <span> at {company} </span>}
         </p>
-        <p className='my-1'>{location && <span>{location}</span>}</p>
-        <Link to={`/profile/${_id}`} className='btn btn-primary'>
-          View Profile
-        </Link>
+        {/* <p className='my-1'>{location && <span>{location}</span>}</p> */}
+
+        <div className='buttons m-1'>
+          <Link to={`/profile/${_id}`} className='btn btn-primary'>
+            View Profile
+          </Link>
+        </div>
+        <div className='skills'>
+          <ul>
+            {skills.slice(0, 4).map((skill, index) => (
+              <li key={index} className='pro'>
+                {skill}
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
-      <ul>
-        {skills.slice(0, 4).map((skill, index) => (
-          <li key={index} className='text-primary'>
-            <i className='fas fa-check'></i>
-            {skill}
-          </li>
-        ))}
-      </ul>
     </div>
   );
 };

@@ -11,17 +11,19 @@ const ProfileAbout = ({
   <div className='profile-about bg-light p-2'>
     {bio && (
       <Fragment>
-        <h2 className='text-primary'>{name.trim().split(" ")[0]}'s Bio</h2>
-        <p>{bio}</p>
+        <h2 className='text-primary text-white'>
+          {name.trim().split(" ")[0]}'s Bio
+        </h2>
+        <p className='text-white'>{bio}</p>
       </Fragment>
     )}
 
     <div className='line'></div>
-    <h2 className='text-primary'>Skill Set</h2>
-    <div className='skills'>
+    <h2 className='text-primary text-white'>Skill Set</h2>
+    <div className='skills2'>
       {skills.map((skill, index) => (
-        <div key={index} className='p-1'>
-          <i className='fa fa-check'></i> {skill}
+        <div key={index} className='protag m-1'>
+          {skill}
         </div>
       ))}
     </div>

@@ -25,7 +25,7 @@ const Profile = ({
       {profile === null || loading ? (
         <Spinner />
       ) : (
-        <div className='mtComponent'>
+        <Fragment>
           <Link to='/profiles' className='btn btn-light'>
             Back to profiles
           </Link>
@@ -74,7 +74,7 @@ const Profile = ({
               <ProfileGithub username={profile.githubusername} />
             )}
           </div>
-        </div>
+        </Fragment>
       )}
     </Fragment>
   );

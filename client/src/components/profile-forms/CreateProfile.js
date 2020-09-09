@@ -49,7 +49,7 @@ const Createprofile = ({ createProfile, history }) => {
   };
 
   return (
-    <div className='mtComponent'>
+    <Fragment>
       <h1 className='large text-primary'>Create Your Profile</h1>
       <p className='lead'>
         <i className='fas fa-user'></i> Let's get some information to make your
@@ -219,7 +219,7 @@ const Createprofile = ({ createProfile, history }) => {
           Go Back
         </Link>
       </form>
-    </div>
+    </Fragment>
   );
 };
 
